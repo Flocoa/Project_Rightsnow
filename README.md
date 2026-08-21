@@ -1,18 +1,13 @@
-# RightsNow!
+#RightsNow!
+This project leverages data from SACEM and other sources to provide independent artists with a real-time revenue tracking and forecasting dashboard.
 
-Project based on data from SACEM and other sources, the goal was to provide a dashboard for our clients - usually independant artist - to calculate their revenue in real time. And to predict their future revenue.
+The data stack relies on dbt paired with BigQuery, a Python Machine Learning model for forecasting, and Looker for data visualization.
 
-This project was done using DBT linked to bigquery, python for the ML model, and looker for the dashboarding.
+##RightsNow.pdf
+A sample preview of the dashboard for both free and premium tiers. It enables artists to track their broadcasts across TV, radio, and web radio while estimating their upcoming earnings.
 
-## RighsNow.pdf
+##RightsNow_prediction.ipynb
+A Python notebook using the Prophet model to generate revenue predictions.
 
-Example of the dashboarding both for the free version and for the premium version
-It offers users a way to track their broadcast on Tv, radio & webradio. And a vision of how much they will earn.
-
-## RightsNow_prediction.ipynb
-
-Python notebook used to make a ML prediction using prophet model. 
-
-## Other files
-
-Files from DBT that were used in the projects. (most important : files under the models' folder, dbt_project.yml, schema.yml)
+##Other files
+The dbt project files, with core logic located in the models/ directory alongside dbt_project.yml and schema.yml.
